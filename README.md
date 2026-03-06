@@ -1,3 +1,6 @@
+---
+> # Answer to the five questions
+---
 
 # 1️⃣ What is the difference between var, let, and const?
 ---
@@ -171,7 +174,7 @@ They use backticks ( ) instead of quotes.
 
 `console.log("My name is " + name);`
 
-***Template Literal**
+**Template Literal**
 
 ```const name = "Rahim";
 
@@ -181,7 +184,7 @@ console.log(`My name is ${name}`);
 
 `My name is Rahim`
 
-***Multi-line String Example***
+**Multi-line String Example**
 ```
 const text = `
 Hello
@@ -192,6 +195,3 @@ console.log(text);
 ```
 
 ---
-
-
-If you want, I can also show you how these 5 ES6 concepts are used together in a real project (like your tree API project). This will make the concepts much clearer in practice.
