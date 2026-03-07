@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Simple Button Click Example</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  *{
+      font-family: "Outfit", sans-serif;
+  }
+
+    .job-card{
+    background-color: white ;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 2px 2px 5px gray;
+    
+  }
+</style>
+  
+</head>
+
+<body >
+ 
+<nav class="navbar">
+ <div class="navbar bg-base-100 shadow-sm grid grid-cols-1 gap-4 sm:grid-cols-2 justify-between">
+   
+  <!-- left logo -->
+   <div class="flex items-center justify-center gap-2">
+    <img src="./assets/github-logo.png" class="max-w-9 min-h-9">
+    <h2 class="font-bold">GitHub Issues Tracker</h2>
+  </div>
+   
+   <!-- search bar -->
+  <div class="flex gap-2">
+    <label class="input">
+      <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="2.5"
+      fill="none"
+      stroke="currentColor"
+    >
+      <circle cx="11" cy="11" r="8"></circle>
+      <path d="m21 21-4.3-4.3"></path>
+    </g>
+  </svg>
+  <input type="search" required placeholder="Search Issues" />
+</label>
+    
+    <!-- right search btn -->
+    <button class="btn btn-primary">+New Issue</button>
+  </div>
+</div>
+</nav>
+
+  <main class="container mx-auto py-8">
+<!-- tabs -->
+  <section>
+    <!-- name of each tab group should be unique -->
+<div class="tabs tabs-box">
+  <input type="radio" name="my_tabs_6" class="tab" aria-label="All" checked="checked" />
+  <div class="tab-content bg-base-100 border-base-300 p-6">
+
+    <!-- card -->
+    
+    <div class="card job-card max-w-96">
+  <figure>
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Card Title</h2>
+    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+    
+  </div>
+
+  <input type="radio" name="my_tabs_6" class="tab" aria-label="Open"  />
+  <div class="tab-content bg-base-100 border-base-300 p-6">Tab content 2</div>
+
+  <input type="radio" name="my_tabs_6" class="tab" aria-label="Closed" />
+  <div class="tab-content bg-base-100 border-base-300 p-6">Tab content 3</div>
+</div>
+  </section>
+
+  <!-- modal -->
+  <!-- You can open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_3.showModal()">open modal</button>
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click on ✕ button to close</p>
+  </div>
+</dialog>
+
+  
+  </main>
+<script src="./assets/login.js"></script>
+</body>
+
+</html>
