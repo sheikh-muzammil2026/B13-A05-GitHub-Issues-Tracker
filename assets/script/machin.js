@@ -1,7 +1,7 @@
 
 function showLoading() {
  loadingSpinner.classList.remove("hidden");
- loadingSpinner.classList.add("flex");
+ loadingSpinner.classList.add("flex", "mx-auto");
 }
 
 function hideLoading() {
@@ -10,5 +10,8 @@ function hideLoading() {
 }
 
 function updateCounts(tabId, countId) {
- countId.innerText = tabId.querySelectorAll(".job-card").length;
+ countId.innerText = tabId.querySelectorAll(".issue-card").length;
 }
+
+
+
